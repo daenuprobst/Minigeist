@@ -4,16 +4,13 @@
 	<article class="{{post_class}}">
 		<header class="post-header">
 			<h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
-			{{#if author}}
-			<p>Post by {{author.name}}</p>
-			{{/if}}
-			<p class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
+			<p class="post-info">Written by {{author.name}} on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
 			{{#if tags}}
-			<p><i class="fa fa-tag"></i> {{tags}}</p>
+			<p class="post-tags"><i class="fa fa-tag"></i> {{tags}}</p>
 			{{/if}}
 		</header>
 		<section class="post-excerpt">
-			<p>{{excerpt}}&hellip;</p>
+			<p>{{excerpt}}&nbsp;<a href="{{url}}">[&hellip;]</a></p>
 		</section>
 	</article>
 	{{/foreach}}

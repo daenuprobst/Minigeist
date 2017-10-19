@@ -1,5 +1,14 @@
 @import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(//fonts.googleapis.com/css?family=Raleway:200,200italic,300,300italic,400,400italic,700,700italic);
+@import url(//fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i);
+@import url(//fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i);
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i);
+
+body {
+  background-color: #1e1e1e;
+  color: #D4D4D4;
+}
+
 #featured-image,
 ul.nav {
   position: relative
@@ -48,14 +57,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Raleway, sans-serif
+  font-family: 'Source Code Pro', monospace;
 }
 
 h1,
 h2,
 h3 {
-  color: #3476dc;
-  font-weight: 200
+  color: #d7ba7d;
+  font-weight: 600
 }
 
 h1 a,
@@ -67,7 +76,7 @@ h3 a {
 h4,
 h5,
 h6 {
-  font-weight: 400
+  font-weight: 500
 }
 
 h1 {
@@ -77,12 +86,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2em;
-  margin-bottom: .5em
+  font-size: 1.75em;
+  margin-bottom: .25em
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: .6667em
 }
 
@@ -169,7 +178,8 @@ table,
 td,
 tspan,
 ul {
-  font-family: georgia, 'times new roman', times, serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 1.6em;
   margin-bottom: 1.6em
@@ -177,13 +187,13 @@ ul {
 
 code,
 pre {
-  font-family: monospace;
+  font-family: Consolas, Inconsolata, monospace;
   white-space: pre
 }
 
 blockquote {
   border-left: .4rem solid #b923e4;
-  color: #888;
+  color: #f1fa8c;
   font-style: italic;
   padding-left: 1rem
 }
@@ -192,25 +202,25 @@ body {
   margin: 40px auto;
   line-height: 1.6;
   font-size: 18px;
-  color: #444;
+  color: #D4D4D4;
   padding: 0 10px
 }
 
 ul.nav {
-  float: right;
   margin: 0;
-  top: -.8rem
+  text-align: right;
 }
 
 ul.nav li {
-  font-family: Raleway, sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
   margin: 0 .5rem;
   display: inline-block
 }
 
 ul.nav li a,
 ul.nav li a:visited {
-  color: #00e
+  color: #c586c0; 
 }
 
 .row,
@@ -225,7 +235,7 @@ header {
 }
 
 a {
-  color: #3476dc;
+  color: #569cd6;
   text-decoration: none
 }
 
@@ -249,6 +259,16 @@ footer.row {
 
 footer.row a {
   color: #709ac7
+}
+
+.post-title {
+  margin-bottom: 0.25em;
+}
+
+.post-info, .post-tags {
+  margin: 0;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.75em; 
 }
 
 #social_buttons {

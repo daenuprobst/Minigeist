@@ -11,11 +11,11 @@
 		<h1>{{title}}</h1>
 		{{/if}}
 		{{#if author}}
-		<p>Post by {{author.name}}</p>
+		<p class="post-author">Post by {{author.name}}</p>
 		{{/if}}
 		<p class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
 		{{#if tags}}
-		<p class="f-post-tags"><i class="fa fa-tag"></i> {{tags}}</p>
+		<p class="post-tags"><i class="fa fa-tag"></i> {{tags}}</p>
 		{{/if}}
 	</header>
 	<section>
